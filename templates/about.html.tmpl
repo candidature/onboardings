@@ -1,0 +1,23 @@
+
+{{template "base" .}}
+
+{{define "content" }}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>This is the body</h1>
+                <h2>This is the body</h2>
+            <h1>This came from template</h1>
+                {{index .StringMap "test"}}
+                {{index .IntMap "key1"}}
+            </div>
+            <p>
+                {{if ne (index .StringMap "remoteIP") ""}}
+                    Your IP address is {{index .StringMap "remoteIP"}}
+                {{else}}
+                    I do not know your IP
+                {{end}}
+            </p>
+        </div>
+    </div>
+{{end}}
