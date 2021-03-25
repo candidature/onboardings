@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/candidatures/onboardings/config"
-	"github.com/candidatures/onboardings/models"
+	"github.com/candidature/onboardings/config"
+	"github.com/candidature/onboardings/models"
 	"log"
 	"net/http"
 )
